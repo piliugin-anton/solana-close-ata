@@ -1,0 +1,22 @@
+[package]
+name = "close-ata"
+version = "0.1.0"
+edition = "2021"
+description = "Close empty Solana Associated Token Accounts and reclaim rent"
+
+[dependencies]
+anyhow = "1"
+bs58 = "0.5"
+clap = { version = "4.6", features = ["derive", "env"] }
+solana-account-decoder = "3"
+solana-client = "3"
+solana-commitment-config = "3"
+solana-sdk = "3"
+spl-token = { version = "9", features = ["no-entrypoint"] }
+spl-token-2022 = { version = "10", features = ["no-entrypoint"] }
+spl-token-group-interface = "=0.7.1"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
