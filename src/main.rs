@@ -38,11 +38,11 @@ struct Args {
     #[arg(long)]
     force: bool,
 
-    /// RPC endpoint. Falls back to SOLANA_RPC_URL, then to mainnet-beta.
+    /// RPC endpoint. Falls back to SOLANA_RPC_URL, then to mainnet.
     #[arg(
         long,
         env = "SOLANA_RPC_URL",
-        default_value = "https://api.mainnet-beta.solana.com"
+        default_value = "https://api.mainnet.solana.com"
     )]
     rpc: String,
 

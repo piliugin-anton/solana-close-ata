@@ -10,7 +10,7 @@ cargo build --release
 
 ## Usage
 
-The RPC endpoint defaults to `https://api.mainnet-beta.solana.com`. Override with the `SOLANA_RPC_URL` env var or `--rpc <URL>` (CLI > env > default).
+The RPC endpoint defaults to `https://api.mainnet.solana.com`. Override with the `SOLANA_RPC_URL` env var or `--rpc <URL>` (CLI > env > default).
 
 ```sh
 export SOLANA_RPC_URL="https://your-rpc-provider.example.com"
@@ -45,7 +45,7 @@ You'll be prompted to confirm before any transaction is sent. Use `-y` to skip.
 |---|---|
 | `--dry-run` | List what would be closed; send nothing. |
 | `--force` | Burn remaining token balances before closing. Destructive. |
-| `--rpc <URL>` | RPC endpoint. Defaults to `$SOLANA_RPC_URL`, then to mainnet-beta. |
+| `--rpc <URL>` | RPC endpoint. Defaults to `$SOLANA_RPC_URL`, then to mainnet. |
 | `-y`, `--yes` | Skip the confirmation prompt. |
 | `--batch-size <N>` | Close instructions per transaction. Default: 12. |
 
