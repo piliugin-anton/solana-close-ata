@@ -1,4 +1,4 @@
-# close-ata
+# Solana ATA close CLI
 
 CLI tool to close empty Solana Associated Token Accounts (ATAs) and reclaim their rent. Scans both SPL Token and Token-2022 programs.
 
